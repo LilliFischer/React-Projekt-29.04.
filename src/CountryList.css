@@ -1,0 +1,35 @@
+/* Container */
+.country-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+/* Suchfeld */
+.country-list input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/* Grid-Liste */
+.country-list .grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+/* Karten */
+.country-list .card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+/* Hover-Effekt */
+.country-list .card:hover {
+  transform: scale(1.05);
+}
